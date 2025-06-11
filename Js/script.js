@@ -57,6 +57,10 @@ function showBanner() {
 
 setInterval(nextBanner, 5000);
 
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+});
+
 // Memasukkan nama sebelum masuk website
 function submitName() {
     const name = document.getElementById('nameInput').value.trim();
