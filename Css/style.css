@@ -1,24 +1,47 @@
 .main--header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: bisque;
+    border-bottom: 3px solid;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main--logo {
-    height: 50px;
-    width: 50px;
-    background-image: url(https://picsum.photos/200);
-    border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-image: url(image/logo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 2px solid #000;
 }
 
 nav {
  display: flex;
  align-items: center;
+ gap: 10px;
 }
 
 nav>a {
-    border: 1px solid black;
-    padding: 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
     text-decoration: none;
-    color: black;
-    border-radius: 4px;
+    color: #333;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.banner-img {
+    height: 350px;
+    background-image: url(https://picsum.photos/900);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+  text-align: center;
 }

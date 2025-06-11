@@ -1,31 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="data:,">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Website_Awalihin </title>
 
     <!-- CSS External -->
-     <link rel="stylesheet" href="Css\style.css">
+    <link rel="stylesheet" href="Css\style.css">
+
 </head>
 <body>
     <!-- Header Content -->
     <header class="main--header">
         <!-- Logo Website -->
+
         <div class="main--logo"> </div>
 
         <!-- Navbar-->
         <nav>
-            <a href="about">About</a>
-            <a href="project">Project</a>
-            <a href="contact">Contact</a>
+            <a href="home">Home</a>
+            <a href="our-profile">Our Profile</a>
+            <a href="message-us">Message Us</a>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main> </main>
+    <hr/> 
 
-    <!-- Footer Cone -->
-    <footer> </footer> 
+    <!-- Main Content -->
+    <main> 
+        <!--Home Section-->
+        <section id="home">
+            <h1>Hi there, Welcome to Motor Stylish website </h1>
+            <p>My name is Awalihin and I am the owner of a Motor Stylish</p>
+
+            <div class="banner-img"></div>
+        </section>
+
+        <hr/>
+
+        <!--Our Profile Section-->
+        <section id="our-profile">
+            <h1>Our Profile</h1>
+            <p>We provide various designs for motorcycles according to your taste.
+            Starting from motorcycle wheels to speedometers, leave it all to us.
+            </p>
+        </section>
+
+        <hr/>
+
+        <!--Message Us Section-->
+        <section id="message-us">
+            <h1>Message Us</h1>
+            <p>If you have any questions, feel free to reach out!</p>
+
+            <form>
+                <div>
+                    <label for="name-input">Name:</label>
+                    <input type="text" id="name-input">
+                </div>
+
+                <div> 
+                    <label for="dob-input">Date of Birth:</label>
+                    <input type="date" id="dob-input">
+                </div>
+
+                <div>
+                    <label>Gender:</label><br>
+                    <input type="radio" id="gender-male" name="gender" value="Laki-laki">
+                    <label for="gender-male">Laki-laki</label><br>
+                    <input type="radio" id="gender-female" name="gender" value="Perempuan">
+                    <label for="gender-female">Perempuan</label>
+                </div>
+                
+                <div>
+                    <label for="message-input">Message:</label><br>
+                    <textarea id="message-input" rows="4" cols="30" placeholder="Tulis pesan Anda di sini..."></textarea>
+                </div>
+
+                <div>
+                    <button onclick="validateForm();" type="button">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+
+    <!-- Footer Content -->
+    <footer> 
+          <p>&copy; 2025 Awalihin. All rights reserved.</p>
+    </footer> 
+
+    <!--JS External-->
+    <script src="js\script.js"></script>
 </body>
 </html>
