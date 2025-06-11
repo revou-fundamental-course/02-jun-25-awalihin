@@ -11,6 +11,7 @@
 
 </head>
 <body>
+   
     <!-- Header Content -->
     <header class="main--header">
         <!-- Logo Website -->
@@ -19,9 +20,11 @@
 
         <!-- Navbar-->
         <nav>
-            <a href="home">Home</a>
-            <a href="our-profile">Our Profile</a>
-            <a href="message-us">Message Us</a>
+            <a href="#home">Home</a>
+            <a href="#our-profile">Our Profile</a>
+            <a href="#message-us">Message Us</a>
+
+            
         </nav>
     </header>
 
@@ -29,59 +32,86 @@
 
     <!-- Main Content -->
     <main> 
-        <!--Home Section-->
+    <!--Home Section-->
         <section id="home">
-            <h1>Hi there, Welcome to Motor Stylish website </h1>
-            <p>My name is Awalihin and I am the owner of a Motor Stylish</p>
+        
+        <!-- Pop-up input nama -->
+        <div class="popup-overlay" id="popup">
+            <div class="popup-box">
+            <h2>Masukkan Nama Anda</h2><input type="text" id="nameInput" placeholder="Nama Anda..."><br>
+            <button onclick="submitName()">Masuk</button></div>
+        </div>
+        
+        <div id="main-content" class="blur">
+            <h1 id="greeting">Hi there!</h1>
+            <p>My name is Awalihin and I am the owner of Motor Stylish</p>
+        </div>
+       
 
-            <div class="banner-img"></div>
+        <div class="banner-img img-1"></div>
+        <div class="banner-img img-2"></div>
+        <div class="banner-img img-3"></div>
+           
         </section>
 
         <hr/>
 
-        <!--Our Profile Section-->
+        <!-- Our Profile Section -->
         <section id="our-profile">
-            <h1>Our Profile</h1>
-            <p>We provide various designs for motorcycles according to your taste.
-            Starting from motorcycle wheels to speedometers, leave it all to us.
-            </p>
-        </section>
+        <h1>Our Profile</h1>
+        <p> We provide various motorcycle designs according to your taste. From rims to speedometers, leave it all to us, because we have several facilities</p>
+        <div class="facilities">
+            <div class="facility">
+             <div class="circle">
+                <img src="assets/4.png">
+             </div>
+             <p>Guarante</p>
+            </div>
+           
+            <div class="facility">
+             <div class="circle">
+                 <img src="assets\5.jpg">
+             </div>
+             <p>Modern<br>Style</p>
+            </div>
+            
+            <div class="facility">
+                <div class="circle">
+                    <img src="assets\8.jpg">
+                </div>
+                <p>Traditional<br>Style</p>
+            </div>
+        </div>
+    </section>
+
 
         <hr/>
 
         <!--Message Us Section-->
         <section id="message-us">
-            <h1>Message Us</h1>
+            <h2>Message Us</h2>
             <p>If you have any questions, feel free to reach out!</p>
+    <div class="container">
 
-            <form>
-                <div>
-                    <label for="name-input">Name:</label>
-                    <input type="text" id="name-input">
-                </div>
+        <!-- Form -->
+        <div class="form-container">
+          <form id="contactForm">
+            <label for="name-input">Name:</label><input type="text" id="name-input">
+            <label for="dob-input">Date of Birth:</label><input type="date" id="dob-input">
+            <label>Gender:</label><input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <label for="message-input">Message:</label>
+            <textarea id="message-input"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
 
-                <div> 
-                    <label for="dob-input">Date of Birth:</label>
-                    <input type="date" id="dob-input">
-                </div>
+        <!-- Output -->
+        <div class="output-container" id="output">
+        <!-- Output will appear here -->
+        </div>
+    </div>
 
-                <div>
-                    <label>Gender:</label><br>
-                    <input type="radio" id="gender-male" name="gender" value="Laki-laki">
-                    <label for="gender-male">Laki-laki</label><br>
-                    <input type="radio" id="gender-female" name="gender" value="Perempuan">
-                    <label for="gender-female">Perempuan</label>
-                </div>
-                
-                <div>
-                    <label for="message-input">Message:</label><br>
-                    <textarea id="message-input" rows="4" cols="30" placeholder="Tulis pesan Anda di sini..."></textarea>
-                </div>
-
-                <div>
-                    <button onclick="validateForm();" type="button">Submit</button>
-                </div>
-            </form>
         </section>
     </main>
     
