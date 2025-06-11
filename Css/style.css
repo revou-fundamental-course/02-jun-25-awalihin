@@ -37,6 +37,8 @@ nav>a {
 
 
 .banner-img {
+    height: 350px;
+    background-image: url(https://picsum.photos/900);
     height: 570px;
     background-size: cover;
     background-position: center;
